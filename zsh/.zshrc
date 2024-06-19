@@ -115,3 +115,4 @@ eval "$(zoxide init --cmd cd zsh)"
 
 alias ff="fastfetch"
 alias ll="ls -al"
+alias dots="code ~/dotfiles"

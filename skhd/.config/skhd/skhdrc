@@ -124,10 +124,10 @@ alt + cmd - up : yabai -m window --swap north
 alt + cmd - down : yabai -m window --swap south
 
 # move managed window
-shift + cmd - left : yabai -m window --warp west
-shift + cmd - right : yabai -m window --warp east
-shift + cmd - up : yabai -m window --warp north
-shift + cmd - down : yabai -m window --warp south
+ctrl + alt + cmd - left : yabai -m window --warp west
+ctrl + alt + cmd - right : yabai -m window --warp east
+ctrl + alt + cmd - up : yabai -m window --warp north
+ctrl + alt + cmd - down : yabai -m window --warp south
 
 # fast focus desktop
 # cmd + alt - x : yabai -m space --focus recent

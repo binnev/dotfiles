@@ -178,13 +178,20 @@ shift + alt - l : yabai -m window --resize left:20:0
 
 # toggle window zoom
 # alt - d : yabai -m window --toggle zoom-parent
-# alt - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
 
-# toggle window split type
+# toggle window split type horizontal/vertical
 cmd - e : yabai -m window --toggle split
 
+# close window 
+shift + cmd - q : yabai -m window --close 
+
 # float / unfloat window and center on screen
-# alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# The grid format is <rows>:<cols>:<start-x>:<start-y>:<width>:<height>, where
+# rows and cols are how many rows and columns there are in total, start-x and
+# start-y are the start indices for the row and column and width and height are
+# how many rows and columns the window spans.
+alt - t : yabai -m window --toggle float --grid 1:4:1:1:2:1
 
 # toggle sticky(+float), picture-in-picture
 # alt - p : yabai -m window --toggle sticky --toggle pip

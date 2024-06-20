@@ -246,6 +246,7 @@ eval "$(zoxide init --cmd cd zsh)"
 alias ff="fastfetch"
 alias ll="ls -al"
 alias dots="code ~/dotfiles"
+alias standup='open "https://deliverect.zoom.us/j/98634749082?pwd=T3dLZ1FmeEJDZVZZRUZxYjd1TWo2QT09#success"'
 
 eval "$(starship init zsh)"
 

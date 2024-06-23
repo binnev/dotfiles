@@ -1,17 +1,17 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[$os$username](bg:bar1 fg:bar6)\
-[](bg:bar2 fg:bar1)\
-[$directory](bg:bar2 fg:bar6)\
+[$os$username](bg:black fg:white)\
+[](bg:bar2 fg:black)\
+[$directory](bg:bar2 fg:white)\
 [](fg:bar2 bg:bar3)\
-[$git_branch$git_status](bg:bar3 fg:bar6)\
+[$git_branch$git_status](bg:bar3 fg:white)\
 [](fg:bar3 bg:bar4)\
-[$c$rust$golang$nodejs$php$java$kotlin$haskell$python](bg:bar4 fg:bar1)\
+[$c$rust$golang$nodejs$php$java$kotlin$haskell$python](bg:bar4 fg:white)\
 [](fg:bar4 bg:bar5)\
-[$docker_context](bg:bar5 fg:bar1)\
+[$docker_context](bg:bar5 fg:white)\
 [](fg:bar5 bg:bar6)\
-[$time](bg:bar6 fg:bar1)\
+[$time](bg:bar6 fg:white)\
 [](fg:bar6)\
 $line_break$character"""
 
@@ -28,12 +28,30 @@ orange = '#d65d0e'
 purple = '#b16286'
 red = '#cc241d'
 yellow = '#d79921'
-bar1 = '#292300'
-bar2 = '#383304'
-bar3 = '#474207'
-bar4 = '#65610d'
-bar5 = '#8d8537'
-bar6 = '#b5a961'
+bg_dim = '#141617'
+bg0 = '#1d2021'
+bg1 = '#282828'
+bg2 = '#282828'
+bg3 = '#3c3836'
+bg4 = '#3c3836'
+bg5 = '#504945'
+bg_statusline1 = '#282828'
+bg_statusline2 = '#32302f'
+bg_statusline3 = '#504945'
+bg_diff_green = '#32361a'
+bg_visual_green = '#333e34'
+bg_diff_red = '#3c1f1e'
+bg_visual_red = '#442e2d'
+bg_diff_blue = '#0d3138'
+bg_visual_blue = '#2e3b3b'
+bg_visual_yellow = '#473c29'
+bg_current_word = '#32302f'
+bar1 = '#3b3735'
+bar2 = '#463b32'
+bar3 = '#52422f'
+bar4 = '#5e4d2a'
+bar5 = '#6c5d25'
+bar6 = '#7a711f'
 
 [os]
 disabled = false
@@ -149,5 +167,5 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[󰶻](bold fg:bar4)'
-error_symbol = '[󰶻](bold fg:red)'
+success_symbol = '[❯](bold fg:white)'
+error_symbol = '[❯](bold fg:red)'

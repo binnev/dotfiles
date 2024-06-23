@@ -193,7 +193,7 @@ bar {
 gaps inner 4
 
 # Outer gaps for all windows: space along the screen edges.
-gaps outer 3
+gaps outer 0
 
 # # Inner and outer gaps for all windows on a specific workspace.
 # # <ws> can be a workspace number or name.

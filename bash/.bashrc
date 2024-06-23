@@ -21,7 +21,7 @@ alias cd="z"
 alias cdi="zi"
 
 alias ff="fastfetch"
-alias ll="ls -al"
+alias ll="ls -alh"
 alias dots="code ~/dotfiles"
 
 # do `something | copy` to copy the output of `something` to system clipboard

@@ -1,8 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[$os$username](bg:black fg:white)\
-[](bg:bar2 fg:black)\
+[$os$username](bg:bar1 fg:white)\
+[](bg:bar2 fg:bar1)\
 [$directory](bg:bar2 fg:white)\
 [](fg:bar2 bg:bar3)\
 [$git_branch$git_status](bg:bar3 fg:white)\
@@ -46,12 +46,12 @@ bg_diff_blue = '#0d3138'
 bg_visual_blue = '#2e3b3b'
 bg_visual_yellow = '#473c29'
 bg_current_word = '#32302f'
-bar1 = '#3b3735'
-bar2 = '#463b32'
-bar3 = '#52422f'
-bar4 = '#5e4d2a'
-bar5 = '#6c5d25'
-bar6 = '#7a711f'
+bar1 = '#7a711f'
+bar2 = '#6c5d25'
+bar3 = '#5e4d2a'
+bar4 = '#52422f'
+bar5 = '#463b32'
+bar6 = '#3b3735'
 
 [os]
 disabled = false

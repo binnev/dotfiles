@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# bar1 = '#7a711f'
+# bar2 = '#6c5d25'
+# bar3 = '#5e4d2a'
+# bar4 = '#52422f'
+# bar5 = '#463b32'
+# bar6 = '#3b3735'
+# green2= '#7a711f'
+
+LIGHT_GREEN=0xffa9b665
+GREEN=0xff6c782e
+WHITE=0xffffffff
+
+options=(
+	style=round
+	width=10.0
+	hidpi=off
+	active_color=$LIGHT_GREEN
+	inactive_color=0x00000000
+)
+
+borders "${options[@]}"

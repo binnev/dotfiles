@@ -1,3 +1,8 @@
+"""
+A script to make sure my keybinds are unique across different OS/WMs
+"""
+
+
 class KeyBinds(dict):
     def __setitem__(self, key: str, value: str) -> None:
         key = key.lower()

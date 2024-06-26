@@ -26,6 +26,7 @@ alias cdi="zi"
 alias ff="fastfetch"
 alias ll="ls -alh"
 alias dots="code ~/dotfiles"
+alias standup='open "https://deliverect.zoom.us/j/98634749082?pwd=T3dLZ1FmeEJDZVZZRUZxYjd1TWo2QT09#success"'
 
 # do `something | copy` to copy the output of `something` to system clipboard
 alias copy="xclip -selection clipboard"

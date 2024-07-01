@@ -1,5 +1,6 @@
 configuration{
-    modi: "run,window,combi";
+    modes: [ combi ];
+    combi-modes: [ window, run ];
     icon-theme: "Oranchelo";
     show-icons: true;
     terminal: "alacritty";
@@ -11,4 +12,29 @@ configuration{
     display-run: " 🏃  Run ";
     display-window: " 🪟  Window";
     sidebar-mode: true;
+}
+
+@theme "~/.config/rofi/gruvbox-material.rasi" 
+
+// theme mods here: 
+
+* {
+    grad1: #7a711f;
+    grad2: #736722;
+    grad3: #6d5e25;
+    grad4: #675727;
+    grad5: #61502a;
+    grad6: #5b4a2c;
+    grad7: #55452e;
+    grad8: #4f4130;
+    grad9: #4a3d31;
+    grad10: #453b33;
+    grad11: #403834;
+    grad12: #3b3735;
+}
+element.normal.active {
+    background-color: @grad4;
+}
+element.selected.active {
+    background-color: @grad1;
 }

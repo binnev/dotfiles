@@ -7,11 +7,14 @@ configuration{
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
-    hide-scrollbar: true;
-    display-combi: " 🖥️  All ";
-    display-run: " 🏃  Run ";
-    display-window: " 🪟  Window";
+    hide-scrollbar: false;
     sidebar-mode: true;
+    display-ssh:    "";
+    display-run:    "❯";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "❯❯❯";
+    show-icons:     true;
 }
 
 @theme "~/.config/rofi/gruvbox-material.rasi" 
@@ -37,4 +40,8 @@ element.normal.active {
 }
 element.selected.active {
     background-color: @grad1;
+}
+element.selected.normal {
+    background-color: @grad9;
+    text-color: @gruv0;
 }

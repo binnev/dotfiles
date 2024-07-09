@@ -26,10 +26,14 @@ alias cdi="zi"
 alias ff="fastfetch"
 alias ll="ls -alh"
 alias dots="code ~/dotfiles"
-alias standup='open -a zoom.us "https://deliverect.zoom.us/j/98634749082?pwd=T3dLZ1FmeEJDZVZZRUZxYjd1TWo2QT09#success"'
 
 # do `something | copy` to copy the output of `something` to system clipboard
 alias copy="xclip -selection clipboard"
 
 eval "$(starship init bash)"
 
+# Include .bashrc_local if it exists.
+# This can be used to define machine-specific stuff
+if [ -f "$HOME/.bashrc_local" ]; then
+    . "$HOME/.bashrc_local"
+fi

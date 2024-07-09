@@ -106,7 +106,7 @@
 # ]
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+cmd + shift - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 
 # restart yabai wm 
 cmd + shift - r : yabai --restart-service

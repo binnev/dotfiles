@@ -112,10 +112,10 @@ cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 cmd + shift - r : yabai --restart-service
 
 # focus window
-cmd - j : yabai -m window --focus west
-cmd - l : yabai -m window --focus east
-cmd - i : yabai -m window --focus north
-cmd - k : yabai -m window --focus south
+ctrl - j : yabai -m window --focus west
+ctrl - l : yabai -m window --focus east
+ctrl - i : yabai -m window --focus north
+ctrl - k : yabai -m window --focus south
 
 # swap managed window
 alt + cmd - left : yabai -m window --swap west

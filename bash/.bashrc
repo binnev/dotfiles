@@ -37,3 +37,4 @@ eval "$(starship init bash)"
 if [ -f "$HOME/.bashrc_local" ]; then
     . "$HOME/.bashrc_local"
 fi
+. "$HOME/.cargo/env"

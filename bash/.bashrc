@@ -31,6 +31,9 @@ alias copy="xclip -selection clipboard"
 alias gst="git status"
 alias glog="git log"
 
+# essential
+alias shrug='echo "¯\_(ツ)_/¯" | copy'
+
 ################################# RUST #################################
 # Thanks Jeremy Chone for this idea 
 # https://www.youtube.com/watch?v=gyoPFZ0Qjlw

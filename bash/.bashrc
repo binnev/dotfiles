@@ -27,6 +27,9 @@ alias dots="code ~/dotfiles"
 # do `something | copy` to copy the output of `something` to system clipboard
 alias copy="xclip -selection clipboard"
 
+# git 
+alias gst="git status"
+alias glog="git log"
 
 ################################# RUST #################################
 # Thanks Jeremy Chone for this idea 

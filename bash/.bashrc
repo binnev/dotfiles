@@ -7,9 +7,6 @@
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# silences the "default shell is zsh" nag on macos
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
 ################################### ALIASES ###################################
 
 alias ls='ls --color=auto'

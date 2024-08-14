@@ -27,6 +27,24 @@ alias dots="code ~/dotfiles"
 # do `something | copy` to copy the output of `something` to system clipboard
 alias copy="xclip -selection clipboard"
 
+
+################################# RUST #################################
+# Thanks Jeremy Chone for this idea 
+# https://www.youtube.com/watch?v=gyoPFZ0Qjlw
+
+# Cargo watch install
+function cwi() {
+    cargo watch -x "install --path ."
+}
+
+# cargo watch example
+# usage `cwe xp_file_name`
+function cwe() {
+    cargo watch -q -c -x "run -q --example '$1'"
+}
+
+################################# OTHER #################################
+
 eval "$(starship init bash)"
 
 # Include .bashrc_local if it exists.

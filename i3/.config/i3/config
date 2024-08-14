@@ -66,16 +66,16 @@ bindsym $mod+space exec --no-startup-id rofi -show combi -font "Hack Nerd Font M
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-# bindsym $mod+j focus left
-# bindsym $mod+k focus down
-# bindsym $mod+l focus up
-# bindsym $mod+semicolon focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+i focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -220,23 +220,22 @@ set $yellow     #d8a657
 set $blue       #7daea3
 set $magenta    #d3869b
 set $cyan       #89b482
-set $white      #d4be98
+set $green      #a9b665
+set $white      #ffffff
 
-set $green      #98971a
-set $green2     #7a711f
 
 # gradient used in starship
-set $bar1       #3b3735
-set $bar2       #463b32
-set $bar3       #52422f
-set $bar4       #5e4d2a
-set $bar5       #6c5d25
-set $bar6       #7a711f
+set $grad1      #7a711f
+set $grad2      #6d5e25
+set $grad3      #61502a
+set $grad4      #55452e
+set $grad5      #4a3d31
+set $grad6      #403834
 
-# target                 title       bg          text     indicator  border
-client.focused           $green2     $green2     $white   $white     $green2
-client.focused_inactive  $bar1       $bar1       $white   $bar1      $bar1
-client.unfocused         $background $background $white   $yellow    $background
-client.urgent            $red        $red        $white   $yellow    $red
-client.placeholder       $yellow     $base       $white   $yellow    $yellow
+# target                 title       bg          text          indicator  border
+client.focused           $grad1      $grad1      $white        $white     $grad1
+client.focused_inactive  $grad1      $grad1      $foreground   $grad1     $grad1
+client.unfocused         $background $background $foreground   $yellow    $background
+client.urgent            $red        $red        $white        $yellow    $red
+client.placeholder       $yellow     $base       $foreground   $yellow    $yellow
 client.background        $background

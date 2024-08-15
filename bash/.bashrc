@@ -31,6 +31,7 @@ alias copy="xclip -selection clipboard"
 alias gst="git status"
 alias glog="git log"
 alias gcl="git clone"
+alias gcm="git commit -m"
 
 # essential
 alias shrug='echo "¯\_(ツ)_/¯" | copy'

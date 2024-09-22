@@ -51,6 +51,21 @@ function cwe() {
     cargo watch -q -c -x "run -q --example '$1'"
 }
 
+# cargo watch test 
+# usage: 
+# `cwt` to run all tests 
+# `cwt test_name`
+# `cwt test1 test2`
+function cwt() {
+    if [[ $# -eq 1 ]]; then 
+        cargo watch -q -c -x "test '$1' -- --nocapture"
+    elif [[ $# -eq 2 ]]; then 
+        cargo watch -q -c -x "test --test '$1' '$2' -- --nocapture"
+    else
+        cargo watch -q -c -x "test -- --nocapture"
+    fi
+}
+
 ################################# OTHER #################################
 
 eval "$(starship init bash)"

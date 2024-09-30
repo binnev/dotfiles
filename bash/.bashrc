@@ -33,6 +33,10 @@ alias glog="git log"
 alias gcl="git clone"
 alias gcm="git commit -m"
 
+# lazygit/docker 
+alias lzg="lazygit"
+alias lzd="lazydocker"
+
 # essential
 alias shrug='echo "¯\_(ツ)_/¯" | copy'
 

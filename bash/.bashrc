@@ -40,6 +40,10 @@ alias lzd="lazydocker"
 # essential
 alias shrug='echo "¯\_(ツ)_/¯" | copy'
 
+function decode() {
+    echo $1 | base64 -d
+}
+
 ################################# RUST #################################
 # Thanks Jeremy Chone for this idea 
 # https://www.youtube.com/watch?v=gyoPFZ0Qjlw

@@ -227,7 +227,7 @@ gaps outer 0
 #
 # inverse_outer only enables outer gaps when there is exactly one
 # window or split container on the workspace.
-smart_gaps on
+smart_gaps off
 
 # ================================== colours ==================================
 # Colors (Gruvbox Material Hard Dark)

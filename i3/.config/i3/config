@@ -59,8 +59,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # screenshots 
 # Note: you'll need to make sure the ~/screenshots dir exists
-bindsym Print exec flameshot full -p ~/screenshots
-bindsym Shift+Print exec flameshot gui -p ~/screenshots
+bindsym Print exec flameshot gui -p ~/screenshots
+bindsym Shift+Print exec flameshot full -p ~/screenshots
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

@@ -41,6 +41,10 @@ exec --no-startup-id nm-applet
 
 default_border pixel 3
 default_floating_border none
+# This wildcard forces all windows to have the border, even stubborn ones like
+# vscode and obsidian.
+for_window [class=".*"] border pixel 3
+
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

@@ -105,8 +105,8 @@
 #    "qutebrowser"
 # ]
 
-# open terminal, blazingly fast compared to iTerm/Hyper
-cmd + shift - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+# open terminal
+cmd + shift - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -o font.size=14
 
 # restart yabai wm 
 cmd + shift - r : yabai --restart-service

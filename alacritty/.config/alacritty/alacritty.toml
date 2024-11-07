@@ -4,7 +4,7 @@ general.import = [
 
 [font]
 normal.family = "Hack Nerd Font"
-size = 10.0
+size = 8.0
 
 [env]
 # This (hopefully) makes sure font size is the same across monitors

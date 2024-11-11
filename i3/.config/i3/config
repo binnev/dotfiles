@@ -257,7 +257,7 @@ set $grad6      #403834
 
 # target                 title       bg          text          indicator  border
 client.focused           $grad1      $grad1      $white        $white     $grad1
-client.focused_inactive  $grad1      $grad1      $foreground   $grad1     $grad1
+client.focused_inactive  $grad3      $grad3      $foreground   $grad3     $grad3
 client.unfocused         $background $background $foreground   $yellow    $background
 client.urgent            $red        $red        $white        $yellow    $red
 client.placeholder       $yellow     $base       $foreground   $yellow    $yellow

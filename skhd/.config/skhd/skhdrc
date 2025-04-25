@@ -200,3 +200,8 @@ alt - t : yabai -m window --toggle float --grid 1:4:1:1:2:1
 
 # toggle sticky(+float), picture-in-picture
 # alt - p : yabai -m window --toggle sticky --toggle pip
+
+
+# make all windows equal size in the current space 
+# https://github.com/koekeishiya/yabai/issues/658
+ctrl + cmd - space : yabai -m space --balance

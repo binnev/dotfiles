@@ -8,17 +8,11 @@
 export PATH="$HOME/.local/bin:$PATH"
 
 ################################### ALIASES ###################################
-
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 alias ll="ls -al"
-
-# zoxide = smarter `cd` command
-eval "$(zoxide init bash)"
-alias cd="z"
-alias cdi="zi"
 
 alias ff="fastfetch"
 alias ll="ls -alh"
@@ -88,3 +82,10 @@ fi
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export EDITOR='nano'
+
+alias mirrors='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+
+# zoxide = smarter `cd` command
+eval "$(zoxide init bash)"
+alias cd="z"
+alias cdi="zi"

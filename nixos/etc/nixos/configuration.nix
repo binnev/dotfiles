@@ -114,6 +114,16 @@
     alacritty
     vscode
     alejandra
+    gnome-control-center
+    rofi
+    gnome-tweaks
+    polybar
+    htop
+    killall
+    picom
+    feh
+    inkscape
+    flameshot
   ];
 
   fonts.packages = with pkgs; [

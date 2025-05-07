@@ -108,6 +108,7 @@
     stow
     fastfetch
     fzf
+    jq
     lazygit
     lazydocker
     starship

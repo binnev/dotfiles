@@ -12,10 +12,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-alias ll="ls -al"
-
 alias ff="fastfetch"
 alias ll="ls -alh"
+alias newest="ls -t | head -n 1"  # gets the name of the most recently modified file
 alias dots="code ~/dotfiles"
 
 # do `something | copy` to copy the output of `something` to system clipboard

@@ -7,10 +7,5 @@
     ./hosts/legion/configuration.nix
   ];
 
-  nix = {
-    package = pkgs.nixVersions.latest;
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
-  };
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 }

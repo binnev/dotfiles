@@ -32,6 +32,7 @@
     feh
     inkscape
     flameshot
+    lshw
   ];
 
   fonts.packages = with pkgs; [

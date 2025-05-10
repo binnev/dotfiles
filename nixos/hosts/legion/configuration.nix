@@ -15,6 +15,7 @@
     ../../modules/packages.nix
     ../../modules/networking.nix
     ../../modules/locale.nix
+    ../../modules/rust.nix
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];

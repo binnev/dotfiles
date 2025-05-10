@@ -84,6 +84,8 @@ export EDITOR='nano'
 
 alias mirrors='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 
+alias rebuild='~/dotfiles/nixos/rebuild.sh'
+
 # zoxide = smarter `cd` command
 eval "$(zoxide init bash)"
 alias cd="z"

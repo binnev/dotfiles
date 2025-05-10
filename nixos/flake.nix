@@ -22,11 +22,11 @@
       legion = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
-          ./configuration.nix
+          .hosts/legion/configuration.nix
           # inputs.home-manager.nixosModules.default
         ];
       };
-      # Add other machines here
+      # Add other machines here by hostname
     };
   };
 }

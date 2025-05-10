@@ -15,9 +15,6 @@
     nixpkgs,
     ...
   } @ inputs: {
-    # use "nixos", or your hostname as the name of the configuration
-    # it's a better practice than "default" shown in the video
-    # So in future I may want a flake per host?
     nixosConfigurations = {
       legion = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
@@ -26,7 +23,13 @@
           # inputs.home-manager.nixosModules.default
         ];
       };
-      # Add other machines here by hostname
+
+      chromebook = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/chromebook/configuration.nix
+        ];
+      };
     };
   };
 }

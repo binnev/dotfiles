@@ -18,6 +18,7 @@
     ../../modules/rust.nix
   ];
 
+  networking.hostName = "legion"; # Define your hostname.
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Bootloader.

@@ -14,6 +14,7 @@
     ../../modules/packages.nix
     ../../modules/networking.nix
     ../../modules/locale.nix
+    ../../modules/i3.nix
   ];
 
   networking.hostName = "chromebook"; # Define your hostname.

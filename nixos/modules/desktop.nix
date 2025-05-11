@@ -10,6 +10,9 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  # GNOME uses dconf to store settings
+  programs.dconf.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";

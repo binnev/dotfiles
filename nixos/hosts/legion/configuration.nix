@@ -18,6 +18,12 @@
     ../../modules/rust.nix
   ];
 
+  # X11 keyboard layout
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
+  };
+
   networking.hostName = "legion"; # Define your hostname.
   nix.settings.experimental-features = ["nix-command" "flakes"];
 

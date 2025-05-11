@@ -30,6 +30,18 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  services.xserver = {
+    enable = true;
+    libinput = {
+      enable = true;
+      touchpad.naturalScrolling = true; # or true if you want Mac-style scrolling
+    };
+    xkb = {
+      layout = "us"; # or your preferred layout
+      variant = "";
+    };
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

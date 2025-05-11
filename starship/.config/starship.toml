@@ -85,6 +85,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+NixOS = ""
 
 [username]
 show_always = true
@@ -97,13 +98,6 @@ style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-# "code" = "󰲋 "
 
 [git_branch]
 symbol = ""

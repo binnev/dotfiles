@@ -81,6 +81,7 @@ bindsym $mod+space exec --no-startup-id rofi -show combi
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+bindsym $mod+shift+b exec --no-startup-id firefox
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down

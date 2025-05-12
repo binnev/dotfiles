@@ -24,7 +24,7 @@
 
     # hopefully ensure sensible dpi across hi-res displays
     xresources.properties = {
-      "Xft.dpi" = "96";
+      "Xft.dpi" = "80";
       "Xcursor.size" = "24";
     };
 

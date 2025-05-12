@@ -81,7 +81,16 @@ bindsym $mod+space exec --no-startup-id rofi -show combi
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# should probably make this generic 
 bindsym $mod+shift+b exec --no-startup-id firefox
+
+# gnome utils 
+exec --no-startup-id gnome-settings-daemon
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+# I think gnome uses this to store its settings? 
+exec --no-startup-id dbus-launch --sh-syntax --exit-with-session i3
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down

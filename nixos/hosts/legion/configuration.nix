@@ -25,6 +25,9 @@
     variant = "";
   };
 
+  # tweak DPI
+  services.xserver.dpi = 180;
+
   networking.hostName = "legion"; # Define your hostname.
   nix.settings.experimental-features = ["nix-command" "flakes"];
 

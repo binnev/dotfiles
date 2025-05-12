@@ -16,6 +16,7 @@
     ../../modules/networking.nix
     ../../modules/locale.nix
     ../../modules/rust.nix
+    ../../modules/i3.nix
   ];
 
   # X11 keyboard layout

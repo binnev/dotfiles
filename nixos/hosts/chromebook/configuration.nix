@@ -4,6 +4,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -15,6 +16,8 @@
     ../../modules/networking.nix
     ../../modules/locale.nix
     ../../modules/i3.nix
+    inputs.home-manager.nixosModules.default
+    ./home.nix
   ];
 
   networking.hostName = "chromebook"; # Define your hostname.

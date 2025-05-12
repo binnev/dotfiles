@@ -4,6 +4,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -17,6 +18,7 @@
     ../../modules/locale.nix
     ../../modules/rust.nix
     ../../modules/i3.nix
+    inputs.home-manager.nixosModules.default
   ];
 
   # X11 keyboard layout
@@ -24,9 +26,6 @@
     layout = "us";
     variant = "";
   };
-
-  # tweak DPI
-  services.xserver.dpi = 200;
 
   networking.hostName = "legion"; # Define your hostname.
   nix.settings.experimental-features = ["nix-command" "flakes"];

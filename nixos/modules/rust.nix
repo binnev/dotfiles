@@ -6,5 +6,15 @@
   environment.systemPackages = with pkgs; [
     rustup
     gcc
+    pkg-config
+    openssl.dev
   ];
+
+  # These are required because by default rust's compiler looks for these in
+  # their usual spot in the FHS. On NixOS, libraries like OpenSSL are not in
+  # global paths (e.g., /usr/include, /usr/lib) -- they’re in Nix store paths.
+  environment.variables = {
+    OPENSSL_DIR = "${pkgs.openssl.dev}";
+    PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+  };
 }

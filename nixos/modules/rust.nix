@@ -8,6 +8,8 @@
     gcc
     pkg-config
     openssl.dev
+    devenv # more configuration than nix shells?
+    direnv # automatically activate nix shells when entering the dir
   ];
 
   # These are required because by default rust's compiler looks for these in

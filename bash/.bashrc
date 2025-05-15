@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:$HOME/.cargo/bin
 
 ################################### ALIASES ###################################
 alias ls='ls --color=auto'
@@ -76,7 +77,6 @@ eval "$(starship init bash)"
 if [ -f "$HOME/.bashrc_local" ]; then
     . "$HOME/.bashrc_local"
 fi
-. "$HOME/.cargo/env"
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 

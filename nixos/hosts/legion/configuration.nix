@@ -32,7 +32,18 @@
       layout = "us";
       variant = "";
     };
-    libinput.touchpad.naturalScrolling = true;
+
+    enable = true;
+    libinput.enable = true;
+
+    inputClassSections = [
+      ''
+        Identifier "Reverse touchpad scrolling"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "NaturalScrolling" "true"
+      ''
+    ];
   };
 
   # Bootloader.

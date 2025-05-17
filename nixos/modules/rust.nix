@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     rustup
     gcc
+    cargo-watch
     pkg-config
     openssl.dev
     devenv # more configuration than nix shells?

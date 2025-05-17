@@ -18,6 +18,7 @@
     ../../modules/networking.nix
     ../../modules/locale.nix
     ../../modules/rust.nix
+    ../../modules/python.nix
     ../../modules/i3.nix
     inputs.home-manager.nixosModules.default
   ];
@@ -34,7 +35,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
   # Install firefox.
   programs.firefox.enable = true;
 

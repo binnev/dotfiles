@@ -68,6 +68,10 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
+  environment.systemPackages = with pkgs; [
+    google-chrome
+  ];
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

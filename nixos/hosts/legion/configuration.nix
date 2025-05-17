@@ -23,14 +23,17 @@
     inputs.home-manager.nixosModules.default
   ];
 
-  # X11 keyboard layout
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
   networking.hostName = "legion"; # Define your hostname.
   nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  services.xserver = {
+    # X11 keyboard layout
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
+    libinput.touchpad.naturalScrolling = true;
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

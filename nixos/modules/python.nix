@@ -7,5 +7,6 @@
     python314
     uv
     ruff
+    pre-commit
   ];
 }

@@ -72,6 +72,8 @@ function cwt() {
 
 eval "$(starship init bash)"
 
+eval "$(direnv hook bash)"
+
 # Include .bashrc_local if it exists.
 # This can be used to define machine-specific stuff
 if [ -f "$HOME/.bashrc_local" ]; then

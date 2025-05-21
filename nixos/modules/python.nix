@@ -8,6 +8,11 @@
     pre-commit
   ];
 
+  # Automatically do `nix develop` when you cd into a project directory with a
+  # .envrc and flake.nix
+  programs.direnv.enable = true;
+  programs.direnv.nix-direnv.enable = true;
+
   # allow running dynamically linked binaries (ruff is one of these)
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [

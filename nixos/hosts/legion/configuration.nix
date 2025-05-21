@@ -18,6 +18,7 @@
     ../../modules/networking.nix
     ../../modules/locale.nix
     ../../modules/rust.nix
+    ../../modules/python.nix
     ../../modules/i3.nix
     inputs.home-manager.nixosModules.default
   ];

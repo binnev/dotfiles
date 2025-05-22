@@ -39,11 +39,11 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-default_border pixel 3
+default_border pixel 5
 default_floating_border none
 # This wildcard forces all windows to have the border, even stubborn ones like
 # vscode and obsidian.
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 5
 
 
 # Use pactl to adjust volume in PulseAudio.
@@ -255,7 +255,6 @@ set $magenta    #d3869b
 set $cyan       #89b482
 set $green      #a9b665
 set $white      #ffffff
-
 
 # gradient used in starship
 set $grad1      #7a711f

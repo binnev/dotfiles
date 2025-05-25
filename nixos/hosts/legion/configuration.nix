@@ -49,11 +49,16 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
   # Install firefox.
   programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  services.logind.lidSwitch = "ignore";
+  services.logind.lidSwitchExternalPower = "ignore";
+  services.logind.lidSwitchDocked = "ignore";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -67,11 +72,6 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    google-chrome
-  ];
-  # https://www.bbc.co.uk/iplayer/live/bbcone
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

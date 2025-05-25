@@ -16,7 +16,10 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  environment.systemPackages = with pkgs; [xbindkeys];
+  environment.systemPackages = with pkgs; [
+    xbindkeys
+    xorg.xbacklight
+  ];
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;

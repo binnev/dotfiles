@@ -82,7 +82,8 @@ fi
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
-export EDITOR='nano'
+# export EDITOR='nano'
+export EDITOR='code --wait'
 
 alias mirrors='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 

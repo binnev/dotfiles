@@ -177,10 +177,18 @@
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.inlayHints.variableTypes": true,
-    "ruff.lint.args": [
-        "--per-file-ignores",
-        "__init__.py:F401" // don't remove unused imports from __init__ files
+    "ruff.lint.select": [
+        "E",
+        "F"
     ],
+    "ruff.configuration": {
+        "unsafe-fixes": true,
+        "lint": {
+            "unfixable": [
+                // "F401"
+            ]
+        }
+    },
     "gitlens.hovers.enabled": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "Prettier-SQL.indentStyle": "tabularRight",

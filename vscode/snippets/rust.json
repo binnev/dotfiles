@@ -1,0 +1,41 @@
+{
+	// Place your snippets for rust here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	"Tests module": {
+		"prefix": "tests",
+		"body": [
+			"#[cfg(test)]",
+			"mod tests {",
+			"    use super::*;",
+			"",
+			"    #[test]",
+			"    fn test_$1() {",
+			"        $2",
+			"    }",
+			"}"
+		]
+	},
+	"Test": {
+		"prefix": "test",
+		"body": [
+			"#[test]",
+			"fn test_$1() {",
+			"    $2",
+			"}"
+		]
+	},
+	"Method": {
+		"prefix": "meth",
+		"body": [
+			"fn $1($2) $3 {",
+			"$4",
+			"}"
+		]
+	},
+	"Advent of Code": {
+		"prefix": "aoc",
+		"body": "pub fn part1(input: &str) -> usize { 0 } pub fn part2(input: &str) -> usize { 0 } #[cfg(test)] mod tests { use super::*; #[test] fn test_part1() { assert_eq!(part1(EXAMPLE), 0); } #[test] fn test_part2() { assert_eq!(part2(EXAMPLE), 0); } } pub const EXAMPLE: &str = \"\";"
+	}
+}

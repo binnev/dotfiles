@@ -162,10 +162,10 @@
         "╱": true
     },
     "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "rust-analyzer.lens.implementations.enable": false,
     "redhat.telemetry.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
     "remote.autoForwardPortsSource": "hybrid",
     "terminal.external.osxExec": "Alacritty.app",
     "terminal.explorerKind": "external",
@@ -182,22 +182,22 @@
         "F"
     ],
     "ruff.configuration": {
-        "unsafe-fixes": true,
+        "unsafe-fixes": false,
         "lint": {
             "unfixable": [
                 // "F401"
+                // "F841" // removes unused variables
             ]
         }
     },
-    "gitlens.hovers.enabled": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "Prettier-SQL.indentStyle": "tabularRight",
     "Prettier-SQL.expressionWidth": 80,
     "Prettier-SQL.tabSizeOverride": 4,
-    "git.blame.editorDecoration.enabled": true,
     "mdb.persistOIDCTokens": false,
     "cloudcode.project": "deliverect-data-curated",
     "cloudcode.autoDependencies": "off",
     "Prettier-SQL.SQLFlavourOverride": "bigquery",
     "security.workspace.trust.untrustedFiles": "open",
+    "githubPullRequests.pullBranch": "never",
 }

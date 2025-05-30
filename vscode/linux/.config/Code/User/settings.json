@@ -162,10 +162,10 @@
         "╱": true
     },
     "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "rust-analyzer.lens.implementations.enable": false,
     "redhat.telemetry.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
     "remote.autoForwardPortsSource": "hybrid",
     "terminal.external.osxExec": "Alacritty.app",
     "terminal.explorerKind": "external",
@@ -177,19 +177,27 @@
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.inlayHints.variableTypes": true,
-    "ruff.lint.args": [
-        "--per-file-ignores",
-        "__init__.py:F401" // don't remove unused imports from __init__ files
+    "ruff.lint.select": [
+        "E",
+        "F"
     ],
-    "gitlens.hovers.enabled": false,
+    "ruff.configuration": {
+        "unsafe-fixes": false,
+        "lint": {
+            "unfixable": [
+                // "F401"
+                // "F841" // removes unused variables
+            ]
+        }
+    },
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "Prettier-SQL.indentStyle": "tabularRight",
     "Prettier-SQL.expressionWidth": 80,
     "Prettier-SQL.tabSizeOverride": 4,
-    "git.blame.editorDecoration.enabled": true,
     "mdb.persistOIDCTokens": false,
     "cloudcode.project": "deliverect-data-curated",
     "cloudcode.autoDependencies": "off",
     "Prettier-SQL.SQLFlavourOverride": "bigquery",
     "security.workspace.trust.untrustedFiles": "open",
+    "githubPullRequests.pullBranch": "never",
 }

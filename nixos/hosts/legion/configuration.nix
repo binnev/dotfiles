@@ -20,6 +20,7 @@
     ../../modules/rust.nix
     ../../modules/python.nix
     ../../modules/i3.nix
+    ../../modules/auto-upgrade.nix
     inputs.home-manager.nixosModules.default
   ];
 

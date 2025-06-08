@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     uv
     pre-commit
+    podman
   ];
 
   # Automatically do `nix develop` when you cd into a project directory with a

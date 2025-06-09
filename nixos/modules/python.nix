@@ -6,7 +6,8 @@
   environment.systemPackages = with pkgs; [
     uv
     pre-commit
-    podman
+    python313
+    docker
   ];
 
   # Automatically do `nix develop` when you cd into a project directory with a

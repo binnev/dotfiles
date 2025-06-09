@@ -29,6 +29,8 @@
         "scminput": false
     },
     "zenMode.fullScreen": false,
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.userFileIndexingLimit": -1,
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
@@ -36,7 +38,6 @@
             "source.organizeImports.ruff": "explicit"
         },
         "editor.inlayHints.enabled": "offUnlessPressed",
-        "analysis.userFileIndexingLimit": -1,
     },
     "[rust]": {
         "editor.codeActionsOnSave": {

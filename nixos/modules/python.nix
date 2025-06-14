@@ -11,6 +11,7 @@
     uv
     pre-commit
     python313
+    postman
   ];
 
   # Automatically do `nix develop` when you cd into a project directory with a

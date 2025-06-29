@@ -36,6 +36,7 @@
     yazi # terminal file manager written in Rust
     tokei # counts lines of code in a project
     xclip
+    pavucontrol
   ];
 
   fonts.packages = with pkgs; [

@@ -12,6 +12,7 @@
     pre-commit
     python313
     postman
+    pipx
   ];
 
   # Automatically do `nix develop` when you cd into a project directory with a

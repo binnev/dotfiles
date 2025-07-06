@@ -16,7 +16,6 @@
     ../../modules/networking.nix
     ../../modules/locale.nix
     ../../modules/i3.nix
-    ../../modules/plex.nix
     inputs.home-manager.nixosModules.default
     ./home.nix
   ];

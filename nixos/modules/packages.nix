@@ -22,9 +22,7 @@
     alacritty
     vscode
     alejandra
-    gnome-control-center
     rofi
-    gnome-tweaks
     polybar
     htop
     killall
@@ -36,7 +34,7 @@
     yazi # terminal file manager written in Rust
     tokei # counts lines of code in a project
     xclip
-    pavucontrol
+    pavucontrol # audio controls
   ];
 
   fonts.packages = with pkgs; [

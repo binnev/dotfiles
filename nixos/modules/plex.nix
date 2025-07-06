@@ -8,8 +8,14 @@
     openFirewall = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    deluge
-    mullvad-vpn
-  ];
+  services.mullvad-vpn = {
+    enable = true;
+    package = pkgs.mullvad-vpn;
+  };
+
+  # read this https://wiki.nixos.org/w/index.php?title=Deluge&mobileaction=toggle_view_desktop
+  services.deluge = {
+    enable = true;
+    web.enable = true;
+  };
 }

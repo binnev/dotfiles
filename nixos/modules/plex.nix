@@ -9,11 +9,11 @@
     deluge
   ];
 
-  services.plex = {
-    enable = true;
-    openFirewall = true;
-  };
-  systemd.services.plex.wantedBy = lib.mkForce []; # disable autostart
+  # services.plex = {
+  #   enable = true;
+  #   openFirewall = true;
+  # };
+  # systemd.services.plex.wantedBy = lib.mkForce []; # disable autostart
 
   services.mullvad-vpn = {
     enable = true;

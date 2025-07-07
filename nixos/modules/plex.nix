@@ -11,6 +11,15 @@
 
   networking.firewall.allowedTCPPorts = [32400];
 
+  users.groups.plex = {};
+
+  users.users.plex = {
+    isSystemUser = true;
+    description = "Plex Media Server user";
+    home = "/var/lib/plex";
+    group = "plex";
+  };
+
   systemd.services.plex = {
     description = "Plex media server";
     after = ["network.target"];

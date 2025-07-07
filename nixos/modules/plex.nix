@@ -14,8 +14,7 @@
   };
 
   # read this https://wiki.nixos.org/w/index.php?title=Deluge&mobileaction=toggle_view_desktop
-  services.deluge = {
-    enable = true;
-    web.enable = true;
-  };
+  environment.systemPackages = with pkgs; [
+    deluge
+  ];
 }

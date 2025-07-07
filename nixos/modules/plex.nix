@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   # read this https://wiki.nixos.org/w/index.php?title=Deluge&mobileaction=toggle_view_desktop
@@ -12,7 +13,7 @@
     enable = true;
     openFirewall = true;
   };
-  systemd.services."plex".wantedBy = []; # disable autostart
+  systemd.services.plex.wantedBy = lib.mkForce []; # disable autostart
 
   services.mullvad-vpn = {
     enable = true;

@@ -9,11 +9,17 @@
     deluge
   ];
 
-  # services.plex = {
-  #   enable = true;
-  #   openFirewall = true;
-  # };
-  # systemd.services.plex.wantedBy = lib.mkForce []; # disable autostart
+  services.plex = {
+    enable = true;
+    openFirewall = true;
+  }; 
+  
+  # disable autostart. mkForce is required here to _set_ the wantedBy to `[]`, 
+  # instead of _adding_ `[]` to the wantedBy. systemd.services.plex.wantedBy =
+  lib.mkForce []; 
+
+  # NOTE: You'll need to create the media library folder, and make it owned by 
+  # the "plex" group, for plex to be able to see files inside
 
   services.mullvad-vpn = {
     enable = true;

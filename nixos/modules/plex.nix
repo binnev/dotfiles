@@ -9,6 +9,18 @@
     deluge
   ];
 
+  systemd.services.plex = {
+    description = "Plex media server";
+    after = ["network.target"];
+    wantedBy = [];
+    serviceConfig = {
+      ExecStart = "${pkgs.plex}/bin/plexmediaserver";
+      Restart = "on-failure";
+      User = "plex";
+      Group = "plex";
+    };
+  };
+
   services.mullvad-vpn = {
     enable = true;
     package = pkgs.mullvad-vpn;

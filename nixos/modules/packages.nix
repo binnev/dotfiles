@@ -35,7 +35,6 @@
     tokei # counts lines of code in a project
     xclip
     pavucontrol # audio controls
-    gnomeExtensions.systemd-manager
   ];
 
   fonts.packages = with pkgs; [

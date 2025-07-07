@@ -9,6 +9,8 @@
     deluge
   ];
 
+  networking.firewall.allowedTCPPorts = [32400];
+
   systemd.services.plex = {
     description = "Plex media server";
     after = ["network.target"];

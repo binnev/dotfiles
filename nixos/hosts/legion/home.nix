@@ -3,6 +3,12 @@
   pkgs,
   ...
 }: {
+  # When Home Manager updates configuration files, it may need to overwrite
+  # existing user files. Setting this option ensures that any files that would
+  # be overwritten are backed up with the specified extension (".backup" here)
+  # to prevent accidental data loss and make rollback easier.
+  home-manager.backupFileExtension = "backup";
+
   home-manager.users.robin = {
     config,
     pkgs,
@@ -21,6 +27,9 @@
     # want to update the value, then make sure to first check the Home Manager
     # release notes.
     home.stateVersion = "24.11"; # Please read the comment before changing.
+
+    # Let Home Manager install and manage itself.
+    programs.home-manager.enable = true;
 
     # hopefully ensure sensible dpi across hi-res displays
     xresources.properties = {
@@ -82,7 +91,17 @@
       # EDITOR = "emacs";
     };
 
-    # Let Home Manager install and manage itself.
-    programs.home-manager.enable = true;
+    xdg.mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "image/jpeg" = "gthumb.desktop";
+        "image/png" = "gthumb.desktop";
+        "image/gif" = "gthumb.desktop";
+        "image/webp" = "gthumb.desktop";
+        "image/bmp" = "gthumb.desktop";
+        "image/tiff" = "gthumb.desktop";
+        "image/svg+xml" = "gthumb.desktop";
+      };
+    };
   };
 }

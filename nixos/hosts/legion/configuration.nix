@@ -11,6 +11,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nvidia.nix
+    ./packages.nix
     ./home.nix
     ../../modules/desktop.nix
     ../../modules/users.nix

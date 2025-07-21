@@ -23,6 +23,7 @@
     ../../modules/i3.nix
     ../../modules/plex.nix
     ../../modules/auto-upgrade.nix
+    ../../modules/usb-drives.nix
     inputs.home-manager.nixosModules.default
   ];
 

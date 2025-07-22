@@ -35,6 +35,7 @@
     tokei # counts lines of code in a project
     xclip
     pavucontrol # audio controls
+    dua # Disk Usage Analyzer written in rust: `dua i` for interactive mode
   ];
 
   fonts.packages = with pkgs; [

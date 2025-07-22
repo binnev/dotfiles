@@ -36,6 +36,7 @@
     xclip
     pavucontrol # audio controls
     dua # Disk Usage Analyzer written in rust: `dua i` for interactive mode
+    dust # alternative to dua
   ];
 
   fonts.packages = with pkgs; [

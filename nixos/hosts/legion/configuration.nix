@@ -20,6 +20,7 @@
     ../../modules/locale.nix
     ../../modules/rust.nix
     ../../modules/python.nix
+    ../../modules/go.nix
     ../../modules/i3.nix
     ../../modules/plex.nix
     ../../modules/auto-upgrade.nix

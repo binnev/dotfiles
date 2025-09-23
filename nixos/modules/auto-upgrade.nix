@@ -12,8 +12,7 @@
     # same repo/config you're using now).
     flake = inputs.self.outPath;
     flags = [
-      "--update-input"
-      "nixpkgs"
+      "--update"
       "-L" # print build logs
     ];
     dates = "02:00";

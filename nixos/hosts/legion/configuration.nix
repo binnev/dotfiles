@@ -45,7 +45,7 @@
   services.libinput.enable = true;
   services.libinput.touchpad.naturalScrolling = true;
   services.libinput.mouse.accelProfile = "flat";
-  # services.libinput.mouse.accelSpeed = -0.7;
+  services.libinput.mouse.accelSpeed = "-0.5";
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -25,6 +25,7 @@
     ../../modules/plex.nix
     ../../modules/auto-upgrade.nix
     ../../modules/usb-drives.nix
+    ../../modules/trackball.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -44,8 +45,6 @@
   # Mouse and trackpad
   services.libinput.enable = true;
   services.libinput.touchpad.naturalScrolling = true;
-  services.libinput.mouse.accelProfile = "flat";
-  services.libinput.mouse.accelSpeed = "-0.5";
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

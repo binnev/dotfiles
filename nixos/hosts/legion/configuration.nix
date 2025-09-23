@@ -39,17 +39,13 @@
     };
 
     enable = true;
-    libinput.enable = true;
-
-    inputClassSections = [
-      ''
-        Identifier "Reverse touchpad scrolling"
-        MatchIsTouchpad "on"
-        Driver "libinput"
-        Option "NaturalScrolling" "true"
-      ''
-    ];
   };
+
+  # Mouse and trackpad
+  services.libinput.enable = true;
+  services.libinput.touchpad.naturalScrolling = true;
+  services.libinput.mouse.accelProfile = "flat";
+  # services.libinput.mouse.accelSpeed = -0.5;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

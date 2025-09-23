@@ -36,14 +36,20 @@
         "editor.codeActionsOnSave": {
             "source.fixAll.ruff": "explicit",
             "source.organizeImports.ruff": "explicit"
-        },
-        "editor.inlayHints.enabled": "offUnlessPressed",
+        }
     },
     "[rust]": {
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit",
             "source.fixAll": "explicit"
         },
+    },
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,

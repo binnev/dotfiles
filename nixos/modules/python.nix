@@ -9,10 +9,11 @@
 
   environment.systemPackages = with pkgs; [
     uv
-    pre-commit
-    python313
+    # This ensures that pipx uses the same python version. Before, I had
+    # installed pipx as a separate package, and it came bundled with python3.12
+    # for some reason. So I couldn't install python3.13 apps.
+    (python313.withPackages (ps: with ps; [pipx]))
     postman
-    pipx
   ];
 
   # Automatically do `nix develop` when you cd into a project directory with a

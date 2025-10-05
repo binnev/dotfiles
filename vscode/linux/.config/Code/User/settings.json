@@ -33,6 +33,7 @@
     "python.analysis.userFileIndexingLimit": -1,
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll.ruff": "explicit",
             "source.organizeImports.ruff": "explicit"
@@ -214,4 +215,13 @@
     "Prettier-SQL.SQLFlavourOverride": "bigquery",
     "security.workspace.trust.untrustedFiles": "open",
     "githubPullRequests.pullBranch": "never",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
 }

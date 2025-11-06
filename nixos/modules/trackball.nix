@@ -16,7 +16,7 @@
       MatchProduct "Kensington Expert Mouse"
       Driver "libinput"
       Option "AccelProfile" "flat"
-      Option "AccelSpeed" "-0.5"
+      Option "AccelSpeed" "-0.75"
     ''
   ];
 }

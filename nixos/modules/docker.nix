@@ -8,6 +8,7 @@
     rootless = {
       enable = true;
       setSocketVariable = true;
+      autoStart = true;
     };
   };
 }

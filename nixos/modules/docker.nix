@@ -10,4 +10,5 @@
       setSocketVariable = true;
     };
   };
+  users.users.robin.extraGroups = ["docker"];
 }

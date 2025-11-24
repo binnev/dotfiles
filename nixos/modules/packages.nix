@@ -37,6 +37,7 @@
     pavucontrol # audio controls
     dua # Disk Usage Analyzer written in rust: `dua i` for interactive mode
     dust # alternative to dua
+    xorg.xev # x events listener (e.g. keypresses)
   ];
 
   fonts.packages = with pkgs; [

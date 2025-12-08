@@ -12,7 +12,7 @@
     "editor.minimap.enabled": false,
     "editor.cursorWidth": 3,
     "window.autoDetectColorScheme": true, // Follows system theme
-    "workbench.preferredLightColorTheme": "Gruvbox Light Hard",
+    "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
     "workbench.preferredDarkColorTheme": "Gruvbox Dark Medium",
     "workbench.iconTheme": "Monokai Pro Icons",
     "editor.fontFamily": "'Hack Nerd Font', 'sauce code pro', 'monospace', monospace",
@@ -225,4 +225,5 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "python.defaultInterpreterPath": "/nix/store/qpwxyfdm50knxyhdzd81mvbg6grhhvl6-python3-3.13.7-env/bin/python3.13",
+    "chat.agent.enabled": false,
 }

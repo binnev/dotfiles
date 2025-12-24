@@ -45,6 +45,11 @@ macos = [
     *common,
 ]
 
+
+def line(char: str = "-", width: int = 80) -> None:
+    print(char * width)
+
+
 if __name__ == "__main__":
     args = sys.argv
     if len(args) < 2:
@@ -53,6 +58,10 @@ if __name__ == "__main__":
     if not (extensions := locals().get(group)):
         raise SystemExit(f"Unknown group {group}")
 
-    print(f"Installing group {group}")
+    line()
     for extension in extensions:
         subprocess.run(f"code --install-extension {extension}", shell=True)
+
+    line()
+    print("Currently installed extensions:\n")
+    _ = subprocess.run("code --list-extensions", shell=True)

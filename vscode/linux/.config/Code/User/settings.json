@@ -12,7 +12,7 @@
     "editor.minimap.enabled": false,
     "editor.cursorWidth": 3,
     "window.autoDetectColorScheme": true, // Follows system theme
-    "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
+    "workbench.preferredLightColorTheme": "Gruvbox Light Soft",
     "workbench.preferredDarkColorTheme": "Gruvbox Dark Medium",
     "workbench.iconTheme": "Monokai Pro Icons",
     "editor.fontFamily": "'Hack Nerd Font', 'sauce code pro', 'monospace', monospace",

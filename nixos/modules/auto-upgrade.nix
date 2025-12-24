@@ -19,10 +19,12 @@
     randomizedDelaySec = "45min";
   };
 
-  # Garbage collect old generations
+  # Garbage collect old generations.
+  # Setting this to false for now because I can't find the option to keep the
+  # last N generations.
   nix.gc = {
-    automatic = true;
+    automatic = false;
     dates = "weekly";
-    options = "--delete-older-than 30d";
+    # options = "--delete-older-than 30d";
   };
 }

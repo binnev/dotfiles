@@ -44,7 +44,6 @@
     #   };
     # };
   };
-  services.displayManager.defaultSession = "xfce";
 
   # Copied from https://gist.github.com/nat-418/1101881371c9a7b419ba5f944a7118b0
   environment.systemPackages = with pkgs; [

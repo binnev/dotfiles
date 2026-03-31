@@ -29,6 +29,19 @@
         arandr # or use gnome's tool for screen layout
       ];
     };
+
+    excludePackages = with pkgs; [
+      xterm
+    ];
+    displayManager = {
+      lightdm = {
+        enable = true;
+        greeters.slick = {
+          enable = true;
+          theme.name = "Zukitre-dark";
+        };
+      };
+    };
   };
   services.displayManager.defaultSession = "xfce";
 
@@ -72,21 +85,5 @@
     };
   };
 
-  services = {
-    blueman.enable = true;
-    xserver = {
-      excludePackages = with pkgs; [
-        xterm
-      ];
-      displayManager = {
-        lightdm = {
-          enable = true;
-          greeters.slick = {
-            enable = true;
-            theme.name = "Zukitre-dark";
-          };
-        };
-      };
-    };
-  };
+  services.blueman.enable = true;
 }

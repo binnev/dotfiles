@@ -224,6 +224,7 @@
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "python.defaultInterpreterPath": "/nix/store/qpwxyfdm50knxyhdzd81mvbg6grhhvl6-python3-3.13.7-env/bin/python3.13",
+    "python.defaultInterpreterPath": "",
     "chat.agent.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
 }

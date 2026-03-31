@@ -34,11 +34,9 @@ alias lzd="lazydocker"
 # essential
 alias shrug='echo "¯\_(ツ)_/¯" | copy'
 
-function decode() {
-    echo $1 | base64 -d
-}
-
 ################################# RUST #################################
+# TODO: move to rust flake
+
 # Thanks Jeremy Chone for this idea 
 # https://www.youtube.com/watch?v=gyoPFZ0Qjlw
 
@@ -84,8 +82,6 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # export EDITOR='nano'
 export EDITOR='code --wait'
-
-alias mirrors='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 
 alias rebuild='~/dotfiles/nixos/rebuild.sh'
 

@@ -173,7 +173,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # logout (no nagbar)
-bindsym $mod+Ctrl+Mod4+l exit
+bindsym $mod+Ctrl+Mod4+l xfce4-session-logout
 # shutdown (no prompt) 
 bindsym $mod+Ctrl+Mod4+s exec "shutdown now"
 

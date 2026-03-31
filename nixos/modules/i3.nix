@@ -6,6 +6,18 @@
 }: {
   services.xserver = {
     enable = true;
+
+    # XFCE as desktop manager only
+    desktopManager = {
+      xterm.enable = false;
+      xfce = {
+        enable = true;
+        noDesktop = false; # still have top panel
+        enableXfwm = false;
+      };
+    };
+
+    # i3 as window manager
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [
@@ -18,4 +30,5 @@
       ];
     };
   };
+  services.displayManager.defaultSession = "xfce";
 }

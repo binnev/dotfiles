@@ -20,6 +20,7 @@
     zoxide
     tree
     alacritty
+    ghostty
     vscode
     alejandra
     rofi

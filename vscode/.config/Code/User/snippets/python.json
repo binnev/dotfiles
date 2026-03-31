@@ -19,5 +19,13 @@
 			"    ${1:pass}"
 		],
 		"description": "Code snippet for a `if __name__ == \"__main__\": ...` block"
+	},
+	"docstring": {
+		"prefix": "doc",
+		"body": [
+			"\"\"\"",
+			"$1",
+			"\"\"\""
+		]
 	}
 }

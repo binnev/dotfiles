@@ -33,15 +33,16 @@
     excludePackages = with pkgs; [
       xterm
     ];
-    displayManager = {
-      lightdm = {
-        enable = true;
-        greeters.slick = {
-          enable = true;
-          theme.name = "Zukitre-dark";
-        };
-      };
-    };
+    # This clashes with gnome's display manager
+    # displayManager = {
+    #   lightdm = {
+    #     enable = true;
+    #     greeters.slick = {
+    #       enable = true;
+    #       theme.name = "Zukitre-dark";
+    #     };
+    #   };
+    # };
   };
   services.displayManager.defaultSession = "xfce";
 

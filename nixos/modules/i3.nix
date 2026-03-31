@@ -89,6 +89,4 @@
       };
     };
   };
-
-  sound.enable = true;
 }

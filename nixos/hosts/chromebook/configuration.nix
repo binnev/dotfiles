@@ -15,6 +15,7 @@
     ../../modules/packages.nix
     ../../modules/networking.nix
     ../../modules/locale.nix
+    ../../modules/gnome.nix
     ../../modules/i3.nix
     inputs.home-manager.nixosModules.default
     ./home.nix

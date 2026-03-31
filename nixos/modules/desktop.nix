@@ -3,23 +3,10 @@
   pkgs,
   ...
 }: {
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # GNOME uses dconf to store settings
-  programs.dconf.enable = true;
+  # TODO: this is becoming a "misc.nix". Move these somewhere?
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    xbindkeys
-    xorg.xbacklight
-  ];
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;

@@ -75,7 +75,6 @@
   services = {
     blueman.enable = true;
     xserver = {
-      enable = true;
       excludePackages = with pkgs; [
         xterm
       ];

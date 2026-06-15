@@ -30,5 +30,13 @@
     glib
     zlib
     xorg.libX11
+
+    libpng
+    libjpeg
+    libwebp
+    libtiff
+
+    SDL2
+    SDL2_image
   ];
 }

@@ -22,7 +22,6 @@
     "editor.rulers": [
         80
     ],
-    "bigqueryRunner.projectId": "deliverect-data-curated",
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -32,6 +31,7 @@
     "zenMode.fullScreen": false,
     "python.analysis.typeCheckingMode": "strict",
     "python.analysis.userFileIndexingLimit": -1,
+    "python-envs.terminal.autoActivationType": "shellStartup",
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.formatOnSave": true,
@@ -207,15 +207,7 @@
         }
     },
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "Prettier-SQL.indentStyle": "tabularRight",
-    "Prettier-SQL.expressionWidth": 80,
-    "Prettier-SQL.tabSizeOverride": 4,
-    "mdb.persistOIDCTokens": false,
-    "cloudcode.project": "deliverect-data-curated",
-    "cloudcode.autoDependencies": "off",
-    "Prettier-SQL.SQLFlavourOverride": "bigquery",
     "security.workspace.trust.untrustedFiles": "open",
-    "githubPullRequests.pullBranch": "never",
     "[dockercompose]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,

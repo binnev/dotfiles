@@ -13,4 +13,8 @@
   fonts.packages = with pkgs; [
     nerd-fonts.hack
   ];
+
+  programs.steam = {
+    enable = true;
+  };
 }

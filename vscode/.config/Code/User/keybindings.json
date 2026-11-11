@@ -226,5 +226,9 @@
     {
         "key": "alt+=",
         "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "workbench.action.toggleMaximizedAuxiliaryBar"
     }
 ]

@@ -4,9 +4,6 @@
   callPackage,
   ...
 }: {
-  # Tells the x server to listen to libinput config
-  services.xserver.libinput.enable = true;
-
   services.libinput.enable = true;
 
   # Sets the accel profile just for the trackball

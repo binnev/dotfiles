@@ -57,9 +57,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  services.logind.lidSwitch = "ignore";
-  services.logind.lidSwitchExternalPower = "ignore";
-  services.logind.lidSwitchDocked = "ignore";
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
+  services.logind.settings.Login.HandleLidSwitchExternalPower = "ignore";
+  services.logind.settings.Login.HandleLidSwitchDocked = "ignore";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

@@ -29,7 +29,7 @@
     stdenv.cc.cc
     glib
     zlib
-    xorg.libX11
+    libX11
 
     libpng
     libjpeg

@@ -7,7 +7,7 @@
     gimp3
     gthumb
     xbindkeys
-    xorg.xbacklight
+    xbacklight
   ];
 
   fonts.packages = with pkgs; [
